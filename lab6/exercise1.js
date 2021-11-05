@@ -10,7 +10,7 @@ const isPrime = num => new Promise(function(resolve, reject) {
     }, 500);
 });
 
-//async function asyncFun(num){
+
    let asyncFun= async (num)=>{
     try{
         console.log(await isPrime(num));
@@ -22,7 +22,5 @@ const isPrime = num => new Promise(function(resolve, reject) {
 
 console.log ('start');
 asyncFun(11)
-// isPrime(11)
-    // .then(message=> console.log(message))
-    // .catch(error=> console.log(error))
+
 console.log ('end');
